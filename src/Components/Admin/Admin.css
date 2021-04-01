@@ -1,0 +1,15 @@
+.left-bar {
+  width: 20%;
+  height: 660px;
+  background-color: blueviolet;
+}
+.link {
+  color: aliceblue;
+}
+.left-bar ul {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+.right-bar {
+  width: 100%;
+}

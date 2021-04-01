@@ -1,0 +1,16 @@
+.nav-item {
+  padding: 10px;
+}
+.nav-link:hover {
+  padding: 7px;
+  color: white;
+  border-radius: 6px;
+  background-color: #71ba58;
+}
+/* .navbar-nav .nav-link {
+  padding-right: 5px;
+  padding-left: 5px;
+} */
+.navbar {
+  border-radius: 5px;
+}
