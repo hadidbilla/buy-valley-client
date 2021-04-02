@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBackspace } from "@fortawesome/free-solid-svg-icons";
+import Header from "../Header/Header";
 
 const DeleteItems = () => {
   const [items, setItems] = useState([]);
@@ -19,7 +20,8 @@ const DeleteItems = () => {
   };
   return (
     <div className="container">
-      <div className="card mb-4">
+      <Header />
+      <div className="card mb-4 mt-5">
         <div class="card-body d-flex justify-content-around ">
           <h5 class="card-title">Name</h5>
           <h4 class="card-title">price</h4>
@@ -29,7 +31,7 @@ const DeleteItems = () => {
       {items.map((item) => (
         <div className="card mb-4">
           <div class="card-body d-flex justify-content-around ">
-            <h5 class="card-title">{item.name}</h5>
+            <h6 class="card-title">{item.name}</h6>
             <h4>৳{item.price}</h4>
             <button
               onClick={() => handleDeleteItem(item._id)}

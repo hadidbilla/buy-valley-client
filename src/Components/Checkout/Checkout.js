@@ -55,7 +55,20 @@ const Checkout = () => {
   return (
     <div className="container">
       <Header />
-      <h1>{selectedItem.name}</h1>
+      <div className="card mt-5 mb-4">
+        <div class="card-body d-flex justify-content-around ">
+          <h5 class="card-title">Name</h5>
+          <h4 class="card-title">Quantity</h4>
+          <h4 class="card-title">Price</h4>
+        </div>
+      </div>
+      <div className="card mb-4">
+        <div className="card-body d-flex justify-content-around">
+          <h6 class="card-title">{selectedItem.name}</h6>
+          <h4>1</h4>
+          <h4>৳{selectedItem.price}</h4>
+        </div>
+      </div>
       <button className="glow-on-hover" onClick={handleCheckout}>
         CheckOut
       </button>

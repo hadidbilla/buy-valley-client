@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../App";
 
 const Header = () => {
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   return (
     <nav class="navbar navbar-light bg-light">
       <div className="container-fluid">
@@ -32,9 +34,15 @@ const Header = () => {
             </Link>
           </li>
           <li class="nav-item">
-            <Link class="nav-link" to="/login">
-              login
-            </Link>
+            {loggedInUser.email ? (
+              <Link class="nav-link" to="/login">
+                {loggedInUser.name}
+              </Link>
+            ) : (
+              <Link class="nav-link" to="/login">
+                login
+              </Link>
+            )}
           </li>
         </ul>
       </div>

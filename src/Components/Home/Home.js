@@ -14,6 +14,13 @@ const Home = () => {
   return (
     <div className="container">
       <Header />
+      {items.length === 0 && (
+        <div class="text-center mt-5 text-success">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden"></span>
+          </div>
+        </div>
+      )}
       <div className="row d-flex justify-content-center">
         {items.map((item) => (
           <Items item={item}></Items>

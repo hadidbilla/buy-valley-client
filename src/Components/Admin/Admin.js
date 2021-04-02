@@ -21,7 +21,7 @@ function Admin() {
             <Link
               className="link"
               style={{ textDecoration: "none" }}
-              to="/manageProduct"
+              to="/addProduct"
             >
               Add product
             </Link>
