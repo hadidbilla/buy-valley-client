@@ -6,13 +6,13 @@ import Header from "../Header/Header";
 const DeleteItems = () => {
   const [items, setItems] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4500/items")
+    fetch("https://enigmatic-harbor-97669.herokuapp.com/items")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
   const handleDeleteItem = (id) => {
     console.log(id);
-    fetch(`http://localhost:4500/deleteItem/${id}`, {
+    fetch(`https://enigmatic-harbor-97669.herokuapp.com/deleteItem/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

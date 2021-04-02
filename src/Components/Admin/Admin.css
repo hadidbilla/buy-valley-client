@@ -1,7 +1,9 @@
 .left-bar {
   width: 20%;
-  height: 660px;
+  height: 460px;
   background-color: blueviolet;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 .link {
   color: aliceblue;

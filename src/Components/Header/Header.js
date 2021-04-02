@@ -7,7 +7,7 @@ import { UserContext } from "../../App";
 const Header = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   return (
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/home">
           Buy-Valley

@@ -18,12 +18,12 @@ const Checkout = () => {
     pic: "",
   });
   useEffect(() => {
-    fetch("http://localhost:4500/items")
+    fetch("https://enigmatic-harbor-97669.herokuapp.com/items")
       .then((res) => res.json())
       .then((data) => setItems(data));
   }, []);
   useEffect(() => {
-    fetch(`http://localhost:4500/checkout/${id}`)
+    fetch(`https://enigmatic-harbor-97669.herokuapp.com/checkout/${id}`)
       .then((res) => res.json())
       .then((data) => setSelectedItem(data));
   }, [id]);
@@ -45,7 +45,7 @@ const Checkout = () => {
     setOrder(orderDetails);
   };
   if (order.email) {
-    fetch("http://localhost:4500/addOrder", {
+    fetch("https://enigmatic-harbor-97669.herokuapp.com/addOrder", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(order),

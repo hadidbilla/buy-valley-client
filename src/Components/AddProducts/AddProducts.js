@@ -13,7 +13,7 @@ const AddProducts = () => {
       price: data.price,
       pic: imageUrl,
     };
-    fetch("http://localhost:4500/addProducts", {
+    fetch("https://enigmatic-harbor-97669.herokuapp.com/addProducts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(itemData),

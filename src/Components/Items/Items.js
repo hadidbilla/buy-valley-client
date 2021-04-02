@@ -13,7 +13,7 @@ const Items = (props) => {
   };
 
   return (
-    <div className="card col-lg-3 col-md-5 m-2">
+    <div className="card col-lg-3 col-md-5 m-2 mt-5 mb-4">
       <img src={pic} class="card-img-top" alt="..."></img>
       <div class="card-body">
         <div className="d-flex justify-content-around">
